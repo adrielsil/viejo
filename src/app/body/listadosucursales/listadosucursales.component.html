@@ -1,0 +1,18 @@
+<h2>Sucursales</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Sucursal</th>
+            <th>Direccion</th>
+            <th>Provincia</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let sucursal of this.listadoSucursales; let i = index">
+            <td>{{ sucursal.nombre }}</td>
+            <td>{{ sucursal.provincia }}</td>
+            <td>{{ sucursal.direccion }}</td>
+        </tr>
+    </tbody>
+</table>
